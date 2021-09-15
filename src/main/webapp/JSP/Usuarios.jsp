@@ -11,7 +11,7 @@
 <div id="" class="container-mg">
 	<div class="row">
 		<div class="col-4"><div align="right"><img src="../imagenes/carrito.png" width="50"></div></div>
-		<div class="col-8"><h1>Tienda Online Productos de Mascota </h1><br> </div>
+		<div class="col-8"><h1>Tienda Online Productos de Mascota ejemplo </h1><br> </div>
 		<div class="col-4"></div>
 	</div>
 		
