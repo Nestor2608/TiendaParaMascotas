@@ -16,7 +16,7 @@
 	
 	<div id="" class="container-mg">
 		<div align="center"><img src="../imagenes/carrito.png" width="90"></div><br>
-		<h1>Bienvenidos a la Tienda de Mascotas h	q</h1><br>
+		<h1>Bienvenidos a la Tienda de Mascotas jhsahafjkasfj</h1><br>
 	</div>	 		
 	<div class="container-fluid" id="user">
 		<div class="row">
