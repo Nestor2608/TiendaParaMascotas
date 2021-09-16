@@ -5,17 +5,44 @@ body{
 	padding: 30px 20px 30px 20px;
 	background-color:·dbdbdb;
 }
-h1{
+h1
+{
 	text-align:center;
+	font-family: 'Raleway', sans-serif;
 }
-form{
+h3
+{
+	font-family: 'Quicksand', sans-serif;
+}
+h4
+{
+	font-family: 'Quicksand', sans-serif;
+}
+h5
+{
+	font-family: 'Quicksand', sans-serif;
+}
+form
+{
 	border: 1px solid #cccccc;
 	padding: 10px 10px 10px 10px;
 	border-radius:20px;
 }
-.bg-light{
-	background-color: #0d6efd !important;
+.bg-light
+{
+	background-color:rgb(255, 186, 0)!important;
 }
 .nav-link{
 	color: #000000 !important;
+}
+.btn1 {
+	border: rgb(12,59,46);
+	outline: none;
+	height: 50px;
+	width: 45%;
+	background-color: rgb(255, 186, 0);
+	color: rgb(12,59,46);
+	border-radius: 4px;
+	font-weight: bold;
+	font-family: 'Quicksand', sans-serif;
 }

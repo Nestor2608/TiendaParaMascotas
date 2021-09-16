@@ -16,7 +16,7 @@
 	
 	<div id="" class="container-mg">
 		<div align="center"><img src="../imagenes/carrito.png" width="90"></div><br>
-		<h1>Bienvenidos a la Tienda de Mascotas jhsahafjkasfj</h1><br>
+		<h1><b> Bienvenidos a la Tienda de Mascotas </b></h1><br>
 	</div>	 		
 	<div class="container-fluid" id="user">
 		<div class="row">
@@ -24,17 +24,17 @@
 			<div class="col-4">
 				<form>
 					<div class="mb-4">
-						<label for="exampleInputUsuario" class="form-label">Usuario</label>
+						<h3><label for="exampleInputUsuario" class="form-label">Usuario</label></h3>
 						<input type="text" class="form-control" id="exampleInputUsuario" aria-describedby="Usuario">	
 					</div>
 				
 					<div class="mb-3">
-						<label for="exampleInputPassword1" class="form-label">Contraseña</label>
+						<h3><label for="exampleInputPassword1" class="form-label">Contraseña</label></h3>
 						<input type="password" class="form-control" id="exampleInputPassword1">
 					</div>
 				
-					<button type="submit" class="btn btn-primary">Aceptar</button>
-					<button type="submit" class="btn btn-primary">Cancelar</button>
+					<button type="submit" class="btn1"><h4>Aceptar</h4></button>
+					<button type="submit" class="btn1"><h4>Cancelar</h4></button>
 					<div class="col-3"></div>
 				</form>
 			</div>
