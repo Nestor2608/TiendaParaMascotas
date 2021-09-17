@@ -16,13 +16,13 @@
 	
 	<div id="" class="container-mg">
 		<div align="center"><img src="../imagenes/carrito.png" width="90"></div><br>
-		<h1><b> Bienvenidos a la Tienda de Mascotas </b></h1><br>
+		<h1> Bienvenidos a la Tienda de Mascotas </h1><br>
 	</div>	 		
 	<div class="container-fluid" id="user">
 		<div class="row">
 			<div class="col-4"></div>
 			<div class="col-4">
-				<form>
+				<form id="inicio">
 					<div class="mb-4">
 						<h3><label for="exampleInputUsuario" class="form-label">Usuario</label></h3>
 						<input type="text" class="form-control" id="exampleInputUsuario" aria-describedby="Usuario">	
