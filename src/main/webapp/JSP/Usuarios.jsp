@@ -21,7 +21,7 @@
 	
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">USUARIOS</a>
+    <a class="navbar-brand" href="#">MENU DE LA TIENDA</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -90,8 +90,8 @@
 				<div class="col-6">
 					<form id="prueba2">
 						<div class="mb-4">
-							<label for="exampleInputUsuario" class="form-label">Usuario</label>
-							<input type="text" class="form-control" id="exampleInputUsuario"
+							<label for="exampleInputUsuario1" class="form-label">Usuario</label>
+							<input type="text" class="form-control" id="exampleInputUsuario1"
 								aria-describedby="Usuario">
 						</div>
 
