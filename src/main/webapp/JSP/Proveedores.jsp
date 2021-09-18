@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 <!-- Bootstrap -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous"/>
-<title>Usuarios - Tienda Online Productos tienda de mascota</title>
+<title>Proveedores - Tienda Online Productos tienda de mascota</title>
 
 <div id="prueba3" class="container-mg">
 	<div class="row" >
@@ -21,7 +21,7 @@
 	
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">USUARIOS</a>
+    <a class="navbar-brand" href="#">PROVEEDORES</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -63,8 +63,8 @@
 						<div class="mb-4">
 							<div class="row">
 								<div class="col-6">
-									<label for="Cedula" class="form-label">Cedula</label> 
-									<input type="text" class="form-control" id="exampleInputUsuario" aria-describedby="Cedula">
+									<label for="nit" class="form-label">NIT</label> 
+									<input type="text" class="form-control" id="nit" aria-describedby="nit">
 								</div>
 
 								<div class="col-2"></div>
@@ -74,13 +74,13 @@
 						</div>
 						<div class="mb-3">
 
-							<label for="nombrecompleto" class="form-label">Nombre Completo</label> 
-							<input type="text" class="form-control" id="nombrecompleto">
+							<label for="nombreproveedor" class="form-label">Nombre Proveedor</label> 
+							<input type="text" class="form-control" id="nombreproveedor">
 						</div>
 
 						<div class="mb-3">
-							<label for="correo" class="form-label">Correo Electronico</label>
-							<input type="text" class="form-control" id="correo">
+							<label for="direccion" class="form-label">Dirección</label>
+							<input type="text" class="form-control" id="direccion">
 						</div>
 
 						<div class="col-3"></div>
@@ -90,15 +90,15 @@
 				<div class="col-6">
 					<form id="prueba2">
 						<div class="mb-4">
-							<label for="exampleInputUsuario" class="form-label">Usuario</label>
-							<input type="text" class="form-control" id="exampleInputUsuario"
-								aria-describedby="Usuario">
+							<label for="telefono" class="form-label">Telefono</label>
+							<input type="text" class="form-control" id="telefono"
+								aria-describedby="telefono">
 						</div>
 
 						<div class="mb-3">
-							<label for="exampleInputPassword1" class="form-label">Contraseña</label>
-							<input type="password" class="form-control"
-								id="exampleInputPassword1">
+							<label for="ciudad" class="form-label">Ciudad</label>
+							<input type="text" class="form-control"
+								id="ciudad">
 						</div>
 
 						<div class="col-3"></div>
