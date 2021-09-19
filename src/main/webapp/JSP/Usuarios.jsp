@@ -19,9 +19,15 @@
 </div>	 
 	
 	
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+</head>
+<body>
+	<!-- Bootstrap -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>	
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">USUARIOS</a>
+    <a class="navbar-brand" href="#">MENU DE LA TIENDA</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -31,11 +37,9 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Usuarios</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Clientes</a>
+        <li class="nav-item"><a class="nav-link" href="./Clientes.jsp">Clientes</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Proveedores</a>
+        <li class="nav-item"><a class="nav-link" href="./Proveedores.jsp">Proveedores</a>
         </li>
         <li class="nav-item">
           <a class="nav-link " href="#">Productos</a>
@@ -49,11 +53,7 @@
       </ul>
     </div>
   </div>
-</nav>
-</head>
-<body>
-	<!-- Bootstrap -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>	
+</nav>	
 	
 	<div id="prueba">
 	<div class="container-fluid" id="user">
@@ -90,8 +90,8 @@
 				<div class="col-6">
 					<form id="prueba2">
 						<div class="mb-4">
-							<label for="exampleInputUsuario" class="form-label">Usuario</label>
-							<input type="text" class="form-control" id="exampleInputUsuario"
+							<label for="exampleInputUsuario1" class="form-label">Usuario</label>
+							<input type="text" class="form-control" id="exampleInputUsuario1"
 								aria-describedby="Usuario">
 						</div>
 
