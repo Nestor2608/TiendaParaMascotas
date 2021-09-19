@@ -35,6 +35,7 @@
 				
 					<button type="submit" class="btn1"><h4>Aceptar</h4></button>
 					<button type="submit" class="btn1"><h4>Cancelar</h4></button>
+					
 					<div class="col-3"></div>
 				</form>
 			</div>
