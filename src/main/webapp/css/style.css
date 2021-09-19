@@ -5,6 +5,7 @@ body{
 	padding: 30px 20px 30px 20px;
 	background-color:·dbdbdb;
 }
+
 h1
 {
 	text-align:center;
@@ -59,6 +60,10 @@ h5
 	background:  rgb(255, 186, 0);
 	
 }
+#titulo_tienda{
+	font-weight: bold;
+	color: black !important;
+}
 #prueba
 {
 	background: white;
@@ -71,4 +76,10 @@ h5
 #botonesusuario{
 	padding: 20px;
 	text-align: center;
+}
+#nav{
+	font-family: 'Quicksand', sans-serif !important;
+}
+#diseño_link{
+	    font-weight: bold;
 }
