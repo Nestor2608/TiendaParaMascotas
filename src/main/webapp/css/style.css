@@ -1,5 +1,15 @@
 @charset "ISO-8859-1";
 
+
+.texto {
+	
+	font-family: 'Quicksand', sans-serif ;
+	font-weight: 600;
+}
+.estilo{
+	justify-content: center;	
+}
+
 body{
 
 	padding: 30px 20px 30px 20px;
@@ -9,10 +19,11 @@ body{
 h1
 {
 	text-align:center;
-	font-family: 'Raleway', sans-serif;
+	 font-family: 'Quicksand', sans-serif !important;
 	color: rgb(12,59,46);
 	font-weight: bold;
 	padding: 10px 50px 10px 10px;
+	
 }
 h3
 {
@@ -41,45 +52,58 @@ h5
 	color:  rgb(12,59,46)!important;
 }
 .btn1 {
-	border: rgb(12,59,46);
+	border: rgb(12,59,46) !important;
 	outline: none;
 	height: 50px;
-	width: 40%;
-	background-color: rgb(255, 186, 0);
-	color: rgb(12,59,46);
+	background-color: rgb(255, 186, 0) !important;
+	color: black !important;
 	border-radius: 4px;
 	font-family: 'Quicksand', sans-serif;
 }
+
 .user
 {
 	padding: 40px 20px 30px 20px;
 }
 #prueba3
 {
-	padding: 10px 50px 10px 10px;
+	
 	background:  rgb(255, 186, 0);
 	
 }
 #titulo_tienda{
 	font-weight: bold;
 	color: black !important;
+	font-size: 2.0rem;
+	
 }
 #prueba
 {
 	background: white;
     padding: 40px 0px 40px 0px;
 }
-#prueba2
-{
-	padding: 10px 50px 10px 10px;
-}
+
 #botonesusuario{
 	padding: 20px;
 	text-align: center;
+	
 }
 #nav{
 	font-family: 'Quicksand', sans-serif !important;
 }
 #diseño_link{
 	    font-weight: bold;
+}
+.centrar{
+	display: grid;
+    justify-content: normal;
+    align-items: start;
+    align-content: center;
+}
+.Titulos{
+	    font-size: 2.0rem;
+	    color: black;
+}
+.sin_padding{
+	background: rgb(255, 186, 0);
 }
