@@ -4,8 +4,6 @@
 <head>
 <link rel="stylesheet" type="text/css" href="../css/style.css"/>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-<!-- Bootstrap -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous"/>
 <title>Tienda Online Productos tienda de mascota</title>
 
 </head>
@@ -14,12 +12,18 @@
 	<div id="prueba" class="container">
 	<div class="container-fluid" id="user">
 			<div class="row">
-				<div class="col-6">
+			<div class="col-lg-12">
+					<h1 class="Titulos">Proveedores</h1>
+				</div>
+				<div class="col-lg-4 centrar">
+					<img src="../imagenes/proveedores.png" width="90%">
+				</div>
+				<div class="col-lg-4 centrar">
 					<form id="prueba2">
 						<div class="mb-4">
 							<div class="row">
-								<div class="col-6">
-									<label for="nit" class="form-label">NIT</label> 
+								<div class="col-lg-12">
+									<label for="nit" class="form-label texto">NIT</label> 
 									<input type="text" class="form-control" id="nit" aria-describedby="nit">
 								</div>
 
@@ -30,12 +34,12 @@
 						</div>
 						<div class="mb-3">
 
-							<label for="nombreproveedor" class="form-label">Nombre Proveedor</label> 
+							<label for="nombreproveedor" class="form-label texto">Nombre Proveedor</label> 
 							<input type="text" class="form-control" id="nombreproveedor">
 						</div>
 
 						<div class="mb-3">
-							<label for="direccion" class="form-label">Dirección</label>
+							<label for="direccion" class="form-label texto">Dirección</label>
 							<input type="text" class="form-control" id="direccion">
 						</div>
 
@@ -43,16 +47,16 @@
 					</form>
 
 				</div>
-				<div class="col-6">
+				<div class="col-lg-4 centrar">
 					<form id="prueba2">
 						<div class="mb-4">
-							<label for="telefono" class="form-label">Telefono</label>
+							<label for="telefono" class="form-label texto">Telefono</label>
 							<input type="text" class="form-control" id="telefono"
 								aria-describedby="telefono">
 						</div>
 
 						<div class="mb-3">
-							<label for="ciudad" class="form-label">Ciudad</label>
+							<label for="ciudad" class="form-label texto">Ciudad</label>
 							<input type="text" class="form-control"
 								id="ciudad">
 						</div>
@@ -62,20 +66,20 @@
 				</div>
 
 				<div class="row" id="botonesusuario">
-					<div class="col-3">
+					<div class="col-lg-3 estilo d-grid gap-2">
+						<button type="submit" class="btn1 btn btn-primary">Consultar</button>
+					</div>
+					<div class="col-lg-3 d-grid gap-2">
+						<button type="submit" class=" btn1 btn btn-primary">Crear</button>
+					</div>
+					<div class="col-lg-3 d-grid gap-2">
+						<button type="submit" class="btn1 btn btn-primary">Actualizar</button>
+					</div>
+					<div class="col-lg-3 d-grid gap-2">
+						<button type="submit" class="btn1 btn btn-primary">Borrar</button>
 
-						<button type="submit" class="btn1">Consultar</button>
 					</div>
-					<div class="col-3">
-						<button type="submit" class="btn1">Crear</button>
-					</div>
-					<div class="col-3">
-						<button type="submit" class="btn1">Actualizar</button>
-					</div>
-					<div class="col-3">
-						<button type="submit" class="btn1">Borrar</button>
-
-					</div>
+				</div>
 				</div>
 			</div>
 		</div>

@@ -5,25 +5,30 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Tienda Online Productos tienda de mascota</title>
-<!-- Links -->
 <link rel="stylesheet" type="text/css" href="../css/style.css" />
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
 	rel="stylesheet"
 	integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
 	crossorigin="anonymous" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+	href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap"
+	rel="stylesheet">
+
 </head>
 <body style="padding: 0">
 	<!-- Navbar -->
 	<div class="row">
-		<div class="col-lg-12">
+		<div class="col-lg-12 sin_padding">
 			<div id="prueba3" class="container-mg">
 				<h1 id="titulo_tienda">Tienda Online Productos de Mascota</h1>
 			</div>
 		</div>
-		
+
 		<div class="col-lg-12">
-			<nav class="navbar navbar-expand-lg navbar-light bg-light"   id="nav">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
 				<div class="container-fluid">
 					<a class="navbar-brand" id="diseño_link">BIENVENIDOS</a>
 					<button class="navbar-toggler" type="button"
@@ -41,7 +46,7 @@
 								aria-current="page" href="./Clientes.jsp">Clientes</a></li>
 							<li class="nav-item"><a class="nav-link"
 								href="./Proveedores.jsp">Proveedores</a></li>
-							<li class="nav-item"><a class="nav-link " href="#">Productos</a>
+							<li class="nav-item"><a class="nav-link " href="./Productos.jsp">Productos</a>
 							</li>
 							<li class="nav-item"><a class="nav-link " href="#">Ventas</a>
 							</li>

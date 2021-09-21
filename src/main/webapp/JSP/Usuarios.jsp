@@ -4,26 +4,28 @@
 <head>
 <link rel="stylesheet" type="text/css" href="../css/style.css" />
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-<!-- Bootstrap -->
-<link
-	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
-	rel="stylesheet"
-	integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
-	crossorigin="anonymous" />
 <title>Tienda Online Productos tienda de mascota</title>
+
 </head>
 <body>
 	<%@ include file="header.jsp"%>
 	<div id="prueba" class="container">
 		<div class="container-fluid" id="user">
 			<div class="row">
-				<div class="col-6">
+				<div class="col-lg-12">
+					<h1 class="Titulos">Usuarios</h1>
+				</div>
+				<div class="col-lg-4 centrar">
+					<img src="../imagenes/users.png" width="90%">
+				</div>
+
+				<div class="col-lg-4 centrar">
 					<form id="prueba2">
 						<div class="mb-4">
 							<div class="row">
-								<div class="col-6">
-									<label for="Cedula" class="form-label">Cedula</label> <input
-										type="text" class="form-control" id="exampleInputUsuario"
+								<div class="col-lg-12">
+									<label for="Cedula" class="form-label texto">Cedula</label> <input
+										type="number" class="form-control" id="exampleInputUsuario"
 										aria-describedby="Cedula">
 								</div>
 
@@ -34,30 +36,31 @@
 						</div>
 						<div class="mb-3">
 
-							<label for="nombrecompleto" class="form-label">Nombre
+							<label for="nombrecompleto" class="form-label texto">Nombre
 								Completo</label> <input type="text" class="form-control"
 								id="nombrecompleto">
 						</div>
 
 						<div class="mb-3">
-							<label for="correo" class="form-label">Correo Electronico</label>
-							<input type="text" class="form-control" id="correo">
+							<label for="correo" class="form-label texto">Correo
+								Electronico</label> <input type="text" class="form-control" id="correo">
 						</div>
 
 						<div class="col-3"></div>
 					</form>
 
 				</div>
-				<div class="col-6">
+
+				<div class="col-lg-4 centrar">
 					<form id="prueba2">
 						<div class="mb-4">
-							<label for="exampleInputUsuario1" class="form-label">Usuario</label>
+							<label for="exampleInputUsuario1" class="form-label texto">Usuario</label>
 							<input type="text" class="form-control" id="exampleInputUsuario1"
 								aria-describedby="Usuario">
 						</div>
 
 						<div class="mb-3">
-							<label for="exampleInputPassword1" class="form-label">Contraseña</label>
+							<label for="exampleInputPassword1" class="form-label texto">Contraseña</label>
 							<input type="password" class="form-control"
 								id="exampleInputPassword1">
 						</div>
@@ -67,22 +70,23 @@
 				</div>
 
 				<div class="row" id="botonesusuario">
-					<div class="col-3">
-
-						<button type="submit" class="btn1">Consultar</button>
+					<div class="col-lg-3 estilo d-grid gap-2">
+						<button type="submit" class="btn1 btn btn-primary">Consultar</button>
 					</div>
-					<div class="col-3">
-						<button type="submit" class="btn1">Crear</button>
+					<div class="col-lg-3 d-grid gap-2">
+						<button type="submit" class=" btn1 btn btn-primary">Crear</button>
 					</div>
-					<div class="col-3">
-						<button type="submit" class="btn1">Actualizar</button>
+					<div class="col-lg-3 d-grid gap-2">
+						<button type="submit" class="btn1 btn btn-primary">Actualizar</button>
 					</div>
-					<div class="col-3">
-						<button type="submit" class="btn1">Borrar</button>
+					<div class="col-lg-3 d-grid gap-2">
+						<button type="submit" class="btn1 btn btn-primary">Borrar</button>
 
 					</div>
 				</div>
+
 			</div>
+
 		</div>
 </body>
 </html>
