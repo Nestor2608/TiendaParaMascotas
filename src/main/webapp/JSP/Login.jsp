@@ -22,7 +22,7 @@
 		<div class="row">
 			<div class="col-4"></div>
 			<div class="col-4">
-				<form id="inicio">
+				<form id="inicio" method="get" action="./DemoServlet">
 					<div class="mb-4">
 						<h3><label for="exampleInputUsuario" class="form-label">Usuario</label></h3>
 						<input type="text" class="form-control" id="exampleInputUsuario" aria-describedby="Usuario">	
