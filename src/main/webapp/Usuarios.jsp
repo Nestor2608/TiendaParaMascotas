@@ -27,7 +27,7 @@
 									<label for="Cedula" class="form-label texto">Cedula</label>
 									<input
 										type="number" class="form-control" id="exampleInputUsuario"
-										aria-describedby="Cedula">
+										aria-describedby="Cedula" name="cedula_usuario">
 								</div>
 
 								<div class="col-2"></div>
@@ -39,12 +39,12 @@
 
 							<label for="nombrecompleto" class="form-label texto">Nombre
 								Completo</label> <input type="text" class="form-control"
-								id="nombrecompleto">
+								id="nombrecompleto" name="nombre_usuario">
 						</div>
 
 						<div class="mb-3">
 							<label for="correo" class="form-label texto">Correo
-								Electronico</label> <input type="text" class="form-control" id="correo">
+								Electronico</label> <input type="text" class="form-control" id="correo" name="email_usuario">
 						</div>
 
 						<div class="col-3"></div>
@@ -57,12 +57,12 @@
 						<div class="mb-4">
 							<label for="exampleInputUsuario1" class="form-label texto">Usuario</label>
 							<input type="text" class="form-control" id="exampleInputUsuario1"
-								aria-describedby="Usuario">
+								aria-describedby="Usuario" name="usuario">
 						</div>
 
 						<div class="mb-3">
 							<label for="exampleInputPassword1" class="form-label texto">Contraseña</label>
-							<input type="password" class="form-control"
+							<input type="password" class="form-control" name="password"
 								id="exampleInputPassword1">
 						</div>
 

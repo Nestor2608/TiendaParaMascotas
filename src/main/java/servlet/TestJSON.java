@@ -67,7 +67,7 @@ public class TestJSON
 
 	public static int postJSON(Usuarios usuario) throws IOException {
 
-		url = new URL(sitio + "usuarios/guardar");
+		url = new URL(sitio + "Usuarios/guardar");
 		HttpURLConnection http;
 		http = (HttpURLConnection) url.openConnection();
 
