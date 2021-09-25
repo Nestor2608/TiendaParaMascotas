@@ -5,7 +5,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Tienda Online Productos tienda de mascota</title>
-<link rel="stylesheet" type="text/css" href="../css/style.css" />
+<link rel="stylesheet" type="text/css" href="./css/style.css" />
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
 	rel="stylesheet"

@@ -16,7 +16,7 @@
 				</div>
 
 				<div class="col-lg-4 centrar">
-					<img src="../imagenes/productos.png" width="90%">
+					<img src="./imagenes/productos.png" width="90%">
 				</div>
 				<div class="col-lg-8 centrar">
 					<form>

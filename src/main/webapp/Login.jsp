@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<link rel="stylesheet" type="text/css" href="../css/style.css" />
+<link rel="stylesheet" type="text/css" href="./css/style.css" />
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 <!-- Bootstrap -->
 <link
@@ -28,12 +28,12 @@
 		<div class="row">
 			<div class="col-lg-6">
 				<div align="center">
-					<img src="../imagenes/bienvenidos.png" width="90%">
+					<img src="./imagenes/bienvenidos.png" width="90%">
 				</div>
 				<br>
 			</div>
 			<div class="col-lg-6 centrar">
-				<form method="get" action="../DemoServlet">
+				<form method="get" action="./DemoServlet">
 					<div class="mb-4">
 						<h3>
 							<label for="exampleInputUsuario" class="form-label">Usuario</label>
