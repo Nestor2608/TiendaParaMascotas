@@ -24,7 +24,8 @@
 						<div class="mb-4">
 							<div class="row">
 								<div class="col-lg-12">
-									<label for="Cedula" class="form-label texto">Cedula</label> <input
+									<label for="Cedula" class="form-label texto">Cedula</label>
+									<input
 										type="number" class="form-control" id="exampleInputUsuario"
 										aria-describedby="Cedula">
 								</div>
@@ -70,7 +71,7 @@
 				</div>
 
 				<div class="row" id="botonesusuario">
-					<div class="col-lg-3 estilo d-grid gap-2">
+					<div class="col-lg-3 d-grid gap-2">
 						<button type="submit" class="btn1 btn btn-primary">Consultar</button>
 					</div>
 					<div class="col-lg-3 d-grid gap-2">

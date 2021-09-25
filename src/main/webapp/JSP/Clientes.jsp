@@ -66,7 +66,7 @@
 				</div>
 
 				<div class="row" id="botonesusuario">
-					<div class="col-lg-3 estilo d-grid gap-2">
+					<div class="col-lg-3 d-grid gap-2">
 						<button type="submit" class="btn1 btn btn-primary">Consultar</button>
 					</div>
 					<div class="col-lg-3 d-grid gap-2">

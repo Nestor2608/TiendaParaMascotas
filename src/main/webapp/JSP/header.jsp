@@ -48,9 +48,9 @@
 								href="./Proveedores.jsp">Proveedores</a></li>
 							<li class="nav-item"><a class="nav-link " href="./Productos.jsp">Productos</a>
 							</li>
-							<li class="nav-item"><a class="nav-link " href="#">Ventas</a>
+							<li class="nav-item"><a class="nav-link " href="./Ventas.jsp">Ventas</a>
 							</li>
-							<li class="nav-item"><a class="nav-link " href="#">Reportes</a>
+							<li class="nav-item"><a class="nav-link " href="./Reportes.jsp">Reportes</a>
 							</li>
 						</ul>
 					</div>

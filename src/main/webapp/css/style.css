@@ -108,3 +108,13 @@ h5
 .sin_padding{
 	background: rgb(255, 186, 0);
 }
+.centrar_row{
+	justify-content: center;
+	align-items: center;
+}
+.table_marginh{
+	margin-top: 60px;
+}
+.padding_button_bt{
+	padding-bottom: 30px !important;
+}
