@@ -45,7 +45,7 @@ public class TestJSON
 	//listar la informacion
 	public static ArrayList<Usuarios> getJSON() throws IOException, ParseException { //devolver un listado JSON
 
-		url = new URL(sitio + "usuarios/listar"); //trae el metodo de Usuarios.API 
+		url = new URL(sitio + "Usuarios/listar"); //trae el metodo de Usuarios.API 
 		HttpURLConnection http = (HttpURLConnection) url.openConnection();
 
 		http.setRequestMethod("GET");

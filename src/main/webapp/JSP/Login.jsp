@@ -33,12 +33,12 @@
 				<br>
 			</div>
 			<div class="col-lg-6 centrar">
-				<form method="get" action="./DemoServlet">
+				<form method="get" action="../DemoServlet">
 					<div class="mb-4">
 						<h3>
 							<label for="exampleInputUsuario" class="form-label">Usuario</label>
 						</h3>
-						<input type="text" class="form-control" id="name" name="usuario"
+						<input type="text" class="form-control" id="name" name="txtusuario"
 							aria-describedby="Usuario">
 					</div>
 
@@ -46,13 +46,13 @@
 						<h3>
 							<label for="exampleInputPassword1" class="form-label" name="password">Contraseña</label>
 						</h3>
-						<input type="password" class="form-control"
+						<input type="password" class="form-control" name="txtpassword"
 							id="exampleInputPassword1">
 					</div>
 
 					<div class="row">
 						<div class="col-lg-6">
-							<button type="submit" class="btn1">
+							<button type="submit" class="btn1" name= "accion" value="Ingresar">
 								<h4>Aceptar</h4>
 							</button>
 						</div>
