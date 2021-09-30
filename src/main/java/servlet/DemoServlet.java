@@ -49,20 +49,85 @@ public class DemoServlet extends HttpServlet {
 		}
 	}
 
+	public void agregarUsuario(HttpServletRequest request, HttpServletResponse response) {
+
+		Usuarios usuarios = new Usuarios();
+		usuarios.setNombre_usuario(request.getParameter("nombre_usuario"));
+		usuarios.setCedula_usuario(Long.parseLong(request.getParameter("cedula_usuario")));
+		usuarios.setEmail_usuario(request.getParameter("email_usuario"));
+		usuarios.setUsuario(request.getParameter("usuario"));
+		usuarios.setPassword(request.getParameter("password"));
+		int respuesta = 0;
+
+		try {
+			respuesta = TestJSON.postJSON(usuarios);
+			PrintWriter write = response.getWriter();
+
+			if (respuesta == 200) {
+				write.println("Usuario agregado correctamente!");
+			} else {
+				write.println("Error " + respuesta);
+			}
+			write.close();
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+
+	}
+
+	public void consultarUsuarioCedula(HttpServletRequest request, HttpServletResponse response) {
+
+		try {
+			ArrayList<Usuarios> lista = TestJSON.getJSON();
+			request.setAttribute("lista", lista);
+			String cedula_usuario = request.getParameter("cedula_usuario");
+			int respuesta = 0;
+			for (Usuarios usuario : lista) {
+				if (usuario.getCedula_usuario()== Long.parseLong(cedula_usuario)) {
+					request.setAttribute("usuario", usuario);
+					request.getRequestDispatcher("/Usuarios.jsp").forward(request, response);
+					respuesta = 1;
+					System.out.println("___________________________"+ usuario);
+					
+				}
+
+			}
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+
+	}
+
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
 
-		String accion = request.getParameter("accion");
+		response.getWriter().append("Served at: ").append(request.getContextPath());
+		String agregar = request.getParameter("guardar");
+		String consultar = request.getParameter("consultar");
+		String ingresar = request.getParameter("Ingresar");
 
-		if (accion.equals("Ingresar")) {
+		String accion = request.getParameter("accion");
+		if (agregar != null) {
+			this.agregarUsuario(request, response);
+		}
+		if (consultar != null) {
+			this.consultarUsuarioCedula(request, response);
+		}
+		if (ingresar != null) {
 			this.validarUsuarios(request, response);
 		}
+		/*
+		 * if (accion.equals("Ingresar")) { this.validarUsuarios(request, response); }
+		 */
+
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
+
 		doGet(request, response);
 
 	}
