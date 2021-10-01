@@ -37,6 +37,11 @@ public class Usuarios
 	public void setUsuario(String usuario) {
 		this.usuario = usuario;
 	}
+	@Override
+	public String toString() {
+		return "Usuarios [cedula_usuario=" + cedula_usuario + ", email_usuario=" + email_usuario + ", nombre_usuario="
+				+ nombre_usuario + ", password=" + password + ", usuario=" + usuario + "]";
+	}
 	
 	
 
