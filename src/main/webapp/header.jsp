@@ -41,17 +41,18 @@
 						<ul class="navbar-nav">
 
 							<li class="nav-item"><a class="nav-link"
-								href="./Usuarios.jsp">Usuarios</a></li>
+								href="Controlador?menu=Usuarios&accion=listar">Usuarios</a></li>
 							<li class="nav-item"><a class="nav-link active"
-								aria-current="page" href="./Clientes.jsp">Clientes</a></li>
+								aria-current="page"
+								href="Controlador?menu=Clientes&accion=listar">Clientes</a></li>
 							<li class="nav-item"><a class="nav-link"
-								href="./Proveedores.jsp">Proveedores</a></li>
-							<li class="nav-item"><a class="nav-link " href="./Productos.jsp">Productos</a>
-							</li>
-							<li class="nav-item"><a class="nav-link " href="./Ventas.jsp">Ventas</a>
-							</li>
-							<li class="nav-item"><a class="nav-link " href="./Reportes.jsp">Reportes</a>
-							</li>
+								href="Controlador?menu=Proveedores&accion=listar">Proveedores</a></li>
+							<li class="nav-item"><a class="nav-link "
+								href="Controlador?menu=Productos&accion=listar">Productos</a></li>
+							<li class="nav-item"><a class="nav-link "
+								href="Controlador?menu=Ventas">Ventas</a></li>
+							<li class="nav-item"><a class="nav-link "
+								href="./Reportes.jsp">Reportes</a></li>
 						</ul>
 					</div>
 				</div>

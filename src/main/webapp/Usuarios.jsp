@@ -5,16 +5,70 @@
 <link rel="stylesheet" type="text/css" href="./css/style.css" />
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 <title>Tienda Online Productos tienda de mascota</title>
+<%@page import="servlet.Usuarios"%>
+<%@page import="java.util.ArrayList"%>
 
 </head>
 <body>
 	<%@ include file="header.jsp"%>
 	<div id="prueba" class="container">
-		<div class="container-fluid" id="user">
-			<form method="get" action="./DemoServlet">
+		<div id="user" class="row">
+			<div class="col-lg-5 col-md-12 centrar">
+				<img src="./imagenes/users.png" width="90%">
+			</div>
+			<div class="col-md-12 col-lg-7">
+				<div class="col-lg-12">
+					<h1 class="Titulos">Usuarios</h1>
+					<input type="hidden" name="menu" value="Usuarios">
+				</div>
+				<div>
+					<form class="form-sign" method="get" action="Controlador">
+						<div class="form-group">
+							<input type="hidden" name="menu" value="Usuarios"> <label
+								class="texto">Cedula</label> <input type="number"
+								name="cedula_usuario" class="form-control" required
+								value="${usuarioSeleccionado.getCedula_usuario()}">
+						</div>
+						<div class="form-group">
+							<label class="texto">Nombre</label> <input type="text"
+								name="nombre_usuario" class="form-control" required
+								value="${usuarioSeleccionado.getNombre_usuario()}">
+						</div>
+						<div class="form-group">
+							<label class="texto">Email</label> <input type="text"
+								name="email_usuario" class="form-control" required
+								value="${usuarioSeleccionado.getEmail_usuario()}">
+						</div>
+						<div class="form-group">
+							<label class="texto">Usuario</label> <input type="text"
+								name="usuario" class="form-control" required
+								value="${usuarioSeleccionado.getUsuario()}">
+						</div>
+						<div class="form-group">
+							<label class="texto">Password</label> <input type="password"
+								name="password" class="form-control" required
+								value="${usuarioSeleccionado.getPassword()}">
+						</div>
+						<div class="row" style="margin-top: 30px">
+							<div class="col-lg-6 centrar">
+								<input type="submit" class="btn btn-warning" name="accion"
+									value="Agregar">
+							</div>
+							<div class="col-lg-6 centrar">
+								<input type="submit" class="btn btn-success" name="accion"
+									value="Actualizar"> </input>
+							</div>
+						</div>
+					</form>
+					
+				</div>
+			</div>
+
+			<!-- <form method="get" action="Controlador">
 				<div class="row">
 					<div class="col-lg-12">
 						<h1 class="Titulos">Usuarios</h1>
+						<input type="hidden" name="menu" value="Usuarios">
 					</div>
 					<div class="col-lg-4 centrar">
 						<img src="./imagenes/users.png" width="90%">
@@ -53,25 +107,51 @@
 								id="exampleInputPassword1">
 						</div>
 					</div>
-
-					<div class="row" id="botonesusuario">
-						<div class="col-lg-3 d-grid gap-2">
-							<button type="submit" class="btn1 btn btn-primary"
-								name="consultar">Consultar</button>
-						</div>
-						<div class="col-lg-3 d-grid gap-2">
-							<button type="submit" class=" btn1 btn btn-primary"
-								value="guardar" name="guardar">Crear</button>
-						</div>
-						<div class="col-lg-3 d-grid gap-2">
-							<button type="submit" class="btn1 btn btn-primary">Actualizar</button>
-						</div>
-						<div class="col-lg-3 d-grid gap-2">
-							<button type="submit" class="btn1 btn btn-primary">Borrar</button>
-						</div>
-					</div>
 				</div>
-			</form>
-		</div>
+			</form>-->
+			<div class="row">
+				<h2 class="Titulos">
+					Todos los usuarios
+					</h1>
+					<div class="col-md-12 col-lg-12">
+						<table class="table tabla">
+							<thead class="thead-dark">
+								<tr>
+									<th scope="col">Cedula</th>
+									<th scope="col">Nombre</th>
+									<th scope="col">Email</th>
+									<th scope="col">Usuario</th>
+									<th scope="col">Password</th>
+									<th scope="col">Acciones</th>
+								</tr>
+							</thead>
+							<tbody>
+								<%
+								ArrayList<Usuarios> lista = (ArrayList<Usuarios>) request.getAttribute("lista");	
+								for (Usuarios us : lista) {
+								%>
+								<tr>
+									<td><%=us.getCedula_usuario()%></td>
+									<td><%=us.getNombre_usuario()%></td>
+									<td><%=us.getEmail_usuario()%></td>
+									<td><%=us.getUsuario()%></td>
+									<td><%=us.getPassword()%></td>
+									<td><a class="btn btn-warning boton"
+										href="Controlador?menu=Usuarios&accion=Cargar&id=<%=us.getCedula_usuario()%>">Editar</a>
+										<a class="btn btn-danger boton"
+										href="Controlador?menu=Usuarios&accion=Eliminar&id=<%=us.getCedula_usuario()%>">Eliminar</a>
+									</td>
+								</tr>
+								<%
+								}
+								%>
+							</tbody>
+
+						</table>
+					</div>
+			</div>
 </body>
 </html>
+<script>
+	
+</script>

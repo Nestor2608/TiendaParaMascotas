@@ -76,29 +76,6 @@ public class DemoServlet extends HttpServlet {
 
 	}
 
-	public void consultarUsuarioCedula(HttpServletRequest request, HttpServletResponse response) {
-
-		try {
-			ArrayList<Usuarios> lista = TestJSON.getJSON();
-			request.setAttribute("lista", lista);
-			String cedula_usuario = request.getParameter("cedula_usuario");
-			int respuesta = 0;
-			for (Usuarios usuario : lista) {
-				if (usuario.getCedula_usuario()== Long.parseLong(cedula_usuario)) {
-					request.setAttribute("usuario", usuario);
-					request.getRequestDispatcher("/Usuarios.jsp").forward(request, response);
-					respuesta = 1;
-					System.out.println("___________________________"+ usuario);
-					
-				}
-
-			}
-		} catch (Exception e) {
-			// TODO: handle exception
-		}
-
-	}
-
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
@@ -109,18 +86,17 @@ public class DemoServlet extends HttpServlet {
 		String ingresar = request.getParameter("Ingresar");
 
 		String accion = request.getParameter("accion");
-		if (agregar != null) {
-			this.agregarUsuario(request, response);
-		}
-		if (consultar != null) {
-			this.consultarUsuarioCedula(request, response);
-		}
+		
 		if (ingresar != null) {
 			this.validarUsuarios(request, response);
 		}
-		/*
-		 * if (accion.equals("Ingresar")) { this.validarUsuarios(request, response); }
-		 */
+
+		if (accion.equals("Ingresar")) {
+			this.validarUsuarios(request, response);
+		}
+		
+		
+		
 
 	}
 

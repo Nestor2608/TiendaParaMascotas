@@ -32,8 +32,8 @@
 				</div>
 				<br>
 			</div>
-			<div class="col-lg-6 centrar">
-				<form method="get" action="./DemoServlet">
+			<div class="col-lg-6 col-md-12 centrar">
+				<form method="get" action="./DemoServlet" id="login">
 					<div class="mb-4">
 						<h3>
 							<label for="exampleInputUsuario" class="form-label">Usuario</label>
@@ -51,19 +51,17 @@
 					</div>
 
 					<div class="row">
-						<div class="col-lg-6">
+						<div class="col-lg-6 col-md-12 centrar">
 							<button type="submit" class="btn1" name= "accion" value="Ingresar">
 								<h4>Aceptar</h4>
 							</button>
 						</div>
-						<div class="col-lg-6">
+						<div class="col-lg-6 col-md-12 centrar">
 							<button type="submit" class="btn1">
 								<h4>Cancelar</h4>
 							</button>
 						</div>
-					</div>
-
-					<div class="col-3"></div>
+					</div>					
 				</form>
 			</div>
 		</div>
