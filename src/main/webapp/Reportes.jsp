@@ -20,12 +20,12 @@
 			<div class="col-lg-8 centrar">
 				<div class="col-lg-12 d-grid gap-2 padding_button_bt" >
 					<button type="submit" class="btn1 btn btn-primary" value="ListarUsuarios" >
-					<a href="./ReporteUsuarios.jsp">Listado de Usuarios</a>
+					<a href="Controlador?menu=Reporte_Usuarios&accion=listar">Listado de Usuarios</a>
 					</button>
 				</div>
 				<div class="col-lg-12 d-grid gap-2 padding_button_bt ">
 					<button type="submit" class="btn1 btn btn-primary" value="ListarClientes">
-					<a href="./ReporteClientes.jsp">Listado de Clientes</a></button>
+					<a href="Controlador?menu=Reporte_Clientes&accion=listar">Listado de Clientes</a></button>
 				</div>
 				<div class="col-lg-12 d-grid gap-2 padding_button_bt">
 					<button type="submit" class="btn1 btn btn-primary" value="VentasClientes">

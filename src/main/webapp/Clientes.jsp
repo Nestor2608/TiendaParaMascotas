@@ -64,7 +64,7 @@
 		<div class="row">
 			<h2 class="Titulos">
 				Todos los Clientes
-				</h1>
+				</h2>
 				<div class="col-md-12 col-lg-12">
 					<table class="table tabla">
 						<thead class="thead-dark">

@@ -5,38 +5,50 @@
 <link rel="stylesheet" type="text/css" href="./css/style.css" />
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 <title>Tienda Online Productos tienda de mascota</title>
+<%@page import="servlet.Usuarios"%>
+<%@page import="java.util.ArrayList"%>
 
 </head>
 <body>
 	<%@ include file="header.jsp"%>
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-12">
-				<h1 class="Titulos">Reporte Listado Usuarios</h1>
+				<h1 class="Titulos">
+					reporte Lista de Usuarios
+					</h1>
+					<div class="col-md-12 col-lg-12">
+						<table class="table tabla">
+							<thead class="thead-dark">
+								<tr>
+									<th scope="col">Cedula</th>
+									<th scope="col">Nombre</th>
+									<th scope="col">Email</th>
+									<th scope="col">Usuario</th>
+									<th scope="col">Password</th>
+									
+								</tr>
+							</thead>
+							<tbody>
+								<%
+								ArrayList<Usuarios> lista = (ArrayList<Usuarios>) request.getAttribute("lista");	
+								for (Usuarios us : lista) {
+								%>
+								<tr>
+									<td><%=us.getCedula_usuario()%></td>
+									<td><%=us.getNombre_usuario()%></td>
+									<td><%=us.getEmail_usuario()%></td>
+									<td><%=us.getUsuario()%></td>
+									<td><%=us.getPassword()%></td>
+									
+								</tr>
+								<%
+								}
+								%>
+							</tbody>
+
+						</table>
+					</div>
 			</div>
-			<div class="col-lg-12">
-				<table class="table">
-					<thead>
-						<tr>
-							<th scope="col">listado de Usuarios</th>
-							<th scope="col">Nombre</th>
-							<th scope="col">Correo Electrónico</th>
-							<th scope="col">Usuario</th>
-							<th scope="col">Password</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<th scope="row"></th>
-							<td></td>
-							<td></td>
-							<td></td>
-						</tr>
-						
-					</tbody>
-				</table>
-			</div>
-		</div>
 	</div>
 </body>
 </html>

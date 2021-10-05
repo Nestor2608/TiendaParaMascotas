@@ -5,7 +5,8 @@
 <link rel="stylesheet" type="text/css" href="./css/style.css" />
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 <title>Tienda Online Productos tienda de mascota</title>
-
+<%@page import="servlet.Clientes"%>
+<%@page import="java.util.ArrayList"%>
 </head>
 <body>
 	<%@ include file="header.jsp"%>
@@ -26,14 +27,22 @@
 						</tr>
 					</thead>
 					<tbody>
-						<tr>
-							<th scope="row"></th>
-							<td></td>
-							<td></td>
-							<td></td>
-						</tr>
-						
-					</tbody>
+							<%
+							ArrayList<Clientes> lista = (ArrayList<Clientes>) request.getAttribute("lista");
+							for (Clientes cl : lista) {
+							%>
+							<tr>
+								<td><%=cl.getCedula_cliente()%></td>
+								<td><%=cl.getDireccion_cliente()%></td>
+								<td><%=cl.getEmail_cliente()%></td>
+								<td><%=cl.getNombre_cliente()%></td>
+								<td><%=cl.getTelefono_cliente()%></td>
+								
+							</tr>
+							<%
+							}
+							%>
+						</tbody>
 				</table>
 			</div>
 		</div>
