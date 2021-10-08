@@ -31,8 +31,8 @@ public class Controlador extends HttpServlet {
 
 		String menu = request.getParameter("menu");
 		String accion = request.getParameter("accion");
-
 		switch (menu) {
+
 		case "Login":
 			request.getRequestDispatcher("/Login.jsp").forward(request, response);
 			break;
@@ -61,8 +61,7 @@ public class Controlador extends HttpServlet {
 					if (respuesta == 200) {
 						request.getRequestDispatcher("Controlador?menu=Usuarios&accion=listar").forward(request,
 								response);
-						
-						
+
 					} else {
 
 						write.println("Error: " + respuesta);
@@ -191,7 +190,7 @@ public class Controlador extends HttpServlet {
 			} else if (accion.equals("Cargar")) {
 				Long id = Long.parseLong(request.getParameter("id"));
 				try {
-					ArrayList<Clientes> lista1 = ClienteJSON.getJSON(); 
+					ArrayList<Clientes> lista1 = ClienteJSON.getJSON();
 					for (Clientes clientes : lista1) {
 						if (clientes.getCedula_cliente() == id) {
 							request.setAttribute("clienteSeleccionado", clientes);
@@ -222,16 +221,119 @@ public class Controlador extends HttpServlet {
 			request.getRequestDispatcher("/Clientes.jsp").forward(request, response);
 			break;
 		case "Proveedores":
+			System.out.println(accion+"**proveedores***************");
+
+			if (accion.equals("listar")) {
+				try {
+					ArrayList<Proveedores> lista = ProveedoresJSON.getJSON();
+					request.setAttribute("lista", lista);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+			if (accion.equals("Agregar")) {
+				if (accion.equals("listar")) {
+					try {
+						ArrayList<Proveedores> lista = ProveedoresJSON.getJSON();
+						request.setAttribute("lista", lista);
+					} catch (Exception e) {
+						e.printStackTrace();
+					}
+				}
+			}
+			if (accion.equals("Agregar")) {
+				Proveedores proveedor = new Proveedores();
+				proveedor.setNitproveedor(Long.parseLong(request.getParameter("nitproveedor")));
+				proveedor.setCiudad_proveedor(request.getParameter("ciudad_proveedor"));
+				proveedor.setDireccion_proveedor(request.getParameter("direccion_proveedor"));
+				proveedor.setNombre_proveedore(request.getParameter("nombre_proveedore"));
+				proveedor.setTelefono_proveedore(request.getParameter("telefono_proveedore"));
+
+				int respuesta = 0;
+				try {
+					respuesta = ProveedoresJSON.postJSON(proveedor);
+
+					PrintWriter write = response.getWriter();
+					if (respuesta == 200) {
+						request.getRequestDispatcher("Controlador?menu=Proveedores&accion=listar").forward(request,
+								response);
+
+					} else {
+
+						write.println("Error: " + respuesta);
+					}
+					write.close();
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+			if (accion.equals("Actualizar")) {
+				Proveedores proveedor = new Proveedores();
+				proveedor.setNitproveedor(Long.parseLong(request.getParameter("nitproveedor")));
+				proveedor.setCiudad_proveedor(request.getParameter("ciudad_proveedor"));
+				proveedor.setDireccion_proveedor(request.getParameter("direccion_proveedor"));
+				proveedor.setNombre_proveedore(request.getParameter("nombre_proveedore"));
+				proveedor.setTelefono_proveedore(request.getParameter("telefono_proveedore"));
+
+				int respuesta = 0;
+				try {
+					respuesta = ProveedoresJSON.putJSON(proveedor, proveedor.getNitproveedor());
+					PrintWriter write = response.getWriter();
+
+					if (respuesta == 200) {
+						request.getRequestDispatcher("Controlador?menu=Proveedores&accion=listar").forward(request,
+								response);
+					} else {
+						write.println("Error: " + respuesta);
+					}
+					write.close();
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			} else if (accion.equals("Cargar")) {
+				Long id = Long.parseLong(request.getParameter("id"));
+				try {
+					ArrayList<Proveedores> lista1 = ProveedoresJSON.getJSON();
+					for (Proveedores proveedores : lista1) {
+						if (proveedores.getNitproveedor() == id) {
+							request.setAttribute("proveedorSeleccionado", proveedores);
+							request.getRequestDispatcher("Controlador?menu=Proveedores&accion=listar").forward(request,
+									response);
+						}
+					}
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			} else if (accion.equals("Eliminar")) {
+				Long id = Long.parseLong(request.getParameter("id"));
+				int respuesta = 0;
+				try {
+					respuesta = ProveedoresJSON.deleteJSON(id);
+					PrintWriter write = response.getWriter();
+					if (respuesta == 200) {
+						request.getRequestDispatcher("Controlador?menu=Proveedores&accion=listar").forward(request,
+								response);
+					} else {
+						write.println("Error: " + respuesta);
+					}
+					write.close();
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
 			request.getRequestDispatcher("/Proveedores.jsp").forward(request, response);
 			break;
-		case "Productos":
-			request.getRequestDispatcher("/Productos.jsp").forward(request, response);
-			break;
+		
 		case "Ventas":
 			request.getRequestDispatcher("/Ventas.jsp").forward(request, response);
 			break;
+		case "Productos":
+			System.out.println("**prodfffg***************");
+
+			request.getRequestDispatcher("/Productos.jsp").forward(request, response);
+			break;
 		case "Reporte_Usuarios":
-			
+
 			if (accion.equals("listar")) {
 				try {
 					ArrayList<Usuarios> lista = TestJSON.getJSON();
@@ -243,7 +345,7 @@ public class Controlador extends HttpServlet {
 			request.getRequestDispatcher("/ReporteUsuarios.jsp").forward(request, response);
 			break;
 		case "Reporte_Clientes":
-			
+
 			if (accion.equals("listar")) {
 				try {
 					ArrayList<Clientes> lista = ClienteJSON.getJSON();
@@ -255,8 +357,6 @@ public class Controlador extends HttpServlet {
 			request.getRequestDispatcher("/ReporteClientes.jsp").forward(request, response);
 			break;
 		}
-		
-		
 
 	}
 
