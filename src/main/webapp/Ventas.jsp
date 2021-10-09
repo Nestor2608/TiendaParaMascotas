@@ -9,7 +9,7 @@
 </head>
 <body>
 	<%@ include file="header.jsp"%>
-	<div id="prueba" class="container">
+	<!--  <div id="prueba" class="container">
 		<div class="row">
 			<div class="col-lg-12">
 				<h1 class="Titulos">Ventas</h1>
@@ -137,6 +137,72 @@
 			</div>
 		</div>
 	</div>
+-->
 
+<div class="row">
+		<div class="col-md-5 seccion1">
+			<form method="get" action="Controlador">
+				<div class="card">
+					<div class="card-body">
+						<div class="form-group">
+							<label> Datos Clientes</label>
+						</div>
+						<input type="hidden" name="menu" value="ventas"> <input
+							type="hidden" name="UsuarioActivo" value="">
+						<div class="form-group d-flex">
+							<div class="col-sm-6 d-flex">
+								<input type="number" name="cedulacliente" class="form-control"
+									placeholder="cedula cliente" value=""> <input
+									type="submit" name="accion" value="BuscarCliente"
+									class="btn btn-outline-info">
+							</div>
+							<div class="col-sm-6">
+								<input type="text" name="nombrecliente" class="form-control"
+									placeholder="Nombre Cliente" value="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-body">
+						<div class="form-group">
+							<label> Datos Productos </label>
+						</div>
+						<div class="form-group d-flex">
+							<div class="col-sm-6 d-flex">
+								<input type="number" name="codigoproducto" class="form-control"
+									placeholder="cod producto" value=""> <input
+									type="submit" name="accion" value="BuscarProducto"
+									class="btn btn-outline-info">
+							</div>
+							<div class="col-sm-6">
+								<input type="text" name="nombreproducto" class="form-control"
+									placeholder="Nombre producto" value="">
+							</div>
+						</div>
+						<div class="form-group d-flex">
+							<div class="col-sm-6 d-flex">
+								<input type="text" name="precioproducto" class="form-control"
+									placeholder="$  0000.00" value="">
+
+							</div>
+							<div class="col-sm-3">
+								<input type="text" name="cantidadproducto" class="form-control"
+									placeholder="Cantidad" value="">
+							</div>
+							<div class="col-sm-3">
+								<input type="text" name="ivaproducto" class="form-control"
+									placeholder="Valor Iva" value="">
+							</div>
+						</div>
+						<div class="form-group d-flex">
+							<input type="submit" name="accion" value="AgregarProducto"
+								class="btn btn-outline-primary">
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
 </body>
 </html>
