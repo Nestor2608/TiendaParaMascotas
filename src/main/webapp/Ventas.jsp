@@ -203,6 +203,59 @@
 				</div>
 			</form>
 		</div>
+		<div class="col-md-7 seccion2">
+			<div class="card">
+				<div class="card-header">
+					<div class="form-group row">
+						<label class="col-sm-3 col form label"> Numero Factura </label>
+						<input type="text" name="numerofactura" class="form-control col-md-4" value="">
+			    </div>
+			</div>
+	<div class="card-body"> 
+	<table class="table"> 
+		<thead class="thead-dark">
+			<tr>
+			<th>#</th>
+			<th>Código</th>
+			<th>Producto</th>
+			<th>Precio</th>
+			<th>Cantidad</th>
+			<th>IVA</th>
+			<th>Total</th>
+			</tr>
+		
+		</thead>
+		<tbody>
+		    <tr>
+		    <th></th>
+			<th></th>
+			<th></th>
+			<th></th>
+			<th></th>
+			<th></th>
+			<th></th>
+			</tr>
+		</tbody>
+	</table>	
 	</div>
+	</div>
+	<div class="card-footer d-flex">
+		<div class="col-mod-4">
+			<label>Subtotal</label></br> </br>
+			<label>IVA</label></br> </br>
+			<label>Total a Cancelar</label></br>		
+		</div>
+		 <div class="col-mod-4">
+				<input type= "text" name="txtSubtotal" class="form-control" placeholder="$000.000" disabled="disabled" value="">
+		 		<input type= "text" name="txttotalIVA" class="form-control" placeholder="$000.000" disabled="disabled" value="">
+		 		<input type= "text" name="SubtotalaCancelar" class="form-control" placeholder="$000.000" disabled="disabled" value="">
+	</div>
+	</div>
+	<div class="card-footer d-flex">
+		<div class="col-mod-8">
+			<a class="btn btn-success" onclick="print()" href="Controlador?menu=ventas&accion=GenerarVenta">Generar Venta</a>
+			<a class="btn btn-danger"  href="Controlador?menu=ventas&accion=GenerarVenta">Nueva Venta</a>
+		</div>
+	</div>			
 </body>
 </html>
