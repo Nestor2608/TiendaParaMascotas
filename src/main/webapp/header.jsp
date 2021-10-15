@@ -50,7 +50,7 @@
 							<li class="nav-item"><a class="nav-link "
 								href="Controlador?menu=Productos&accion=listar">Productos</a></li>
 							<li class="nav-item"><a class="nav-link "
-								href="Controlador?menu=Ventas">Ventas</a></li>
+								href="Controlador?menu=Ventas&accion=default">Ventas</a></li>
 							<li class="nav-item"><a class="nav-link "
 								href="./Reportes.jsp">Reportes</a></li>
 						</ul>
