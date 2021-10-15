@@ -1,6 +1,6 @@
 package servlet;
 
-
+//productos java
 public class Productos {
 
 	private long codigo_producto;

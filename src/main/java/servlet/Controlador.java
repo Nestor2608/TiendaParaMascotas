@@ -20,6 +20,7 @@ import org.apache.jasper.tagplugins.jstl.core.Out;
 @WebServlet("/Controlador")
 public class Controlador extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+	//comentarie por que hay error
 	// ***********variables generales dentro de la clase contralador
 		// *****************
 		/*long subtotal = 0, totalapagar = 0;

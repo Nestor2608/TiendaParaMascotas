@@ -23,7 +23,7 @@ import servlet.ProductosJSON;
 import servlet.Proveedores;
 import servlet.ProveedoresJSON;
 
-
+//controlador de productos
 
 @WebServlet("/ControladorProductos")
 @MultipartConfig

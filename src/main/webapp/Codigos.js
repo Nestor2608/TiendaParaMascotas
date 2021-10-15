@@ -6,3 +6,4 @@ function cargarArchivo(elemento){
 	document.formulario.submit();
 	alert("se proceso");
 }
+//javascript
