@@ -22,7 +22,7 @@ public class Controlador extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	// ***********variables generales dentro de la clase contralador
 		// *****************
-		long subtotal = 0, totalapagar = 0;
+		/*long subtotal = 0, totalapagar = 0;
 		long codProducto = 0, precio = 0, valor_iva = 0, iva = 0, subtotaliva = 0, acusubtotal = 0;
 		long numfac = 0;
 		int cantidad = 0, item = 0;
@@ -103,7 +103,7 @@ public class Controlador extends HttpServlet {
 			}
 		}
 		
-
+*/
 				
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
@@ -402,7 +402,7 @@ public class Controlador extends HttpServlet {
 			}
 			request.getRequestDispatcher("/Proveedores.jsp").forward(request, response);
 			break;
-		
+		/*
 		case "Ventas":
 			request.getRequestDispatcher("/Ventas.jsp").forward(request, response);
 			// ******************** enviaremos la cedula del usuario al formulario ventas
@@ -499,7 +499,7 @@ public class Controlador extends HttpServlet {
 						}
 
 						request.getRequestDispatcher("/Ventas.jsp").forward(request, response);
-						break;
+						break;*/
 		case "Productos":
 			System.out.println("**prodfffg***************");
 
