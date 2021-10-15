@@ -501,7 +501,7 @@ public class Controlador extends HttpServlet {
 						request.getRequestDispatcher("/Ventas.jsp").forward(request, response);
 						break;*/
 		case "Productos":
-			System.out.println("**prodfffg***************");
+			
 
 			request.getRequestDispatcher("/Productos.jsp").forward(request, response);
 			break;

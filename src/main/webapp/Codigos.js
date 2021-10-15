@@ -5,4 +5,4 @@ function cargarArchivo(elemento){
 	document.formulario.action = "ControladorProductos";
 	document.formulario.submit();
 	alert("se proceso");
-}.
+}
