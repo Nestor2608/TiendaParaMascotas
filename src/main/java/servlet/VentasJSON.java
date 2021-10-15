@@ -1,6 +1,6 @@
 package servlet;
 import java.io.IOException;
-
+/*
 
 public class VentasJSON {
 	private static URL url;
@@ -85,3 +85,4 @@ public class VentasJSON {
 		}
 
 }
+*/
