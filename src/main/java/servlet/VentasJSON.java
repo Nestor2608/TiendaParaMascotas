@@ -1,6 +1,19 @@
 package servlet;
 import java.io.IOException;
-/*
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.net.HttpURLConnection;
+import java.net.ProtocolException;
+import java.net.URL;
+import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
+import java.util.Iterator;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
+
 
 public class VentasJSON {
 	private static URL url;
@@ -8,7 +21,7 @@ public class VentasJSON {
 	
 	public static int postJSON(Ventas ventas) throws IOException {
 
-		url = new URL(sitio + "ventas/guardar");
+		url = new URL(sitio + "Ventas/guardar");
 		HttpURLConnection http;
 		http = (HttpURLConnection) url.openConnection();
 
@@ -41,7 +54,7 @@ public class VentasJSON {
 	
 	public static ArrayList<Ventas> getJSON() throws IOException, ParseException { // devolver un listado JSON
 
-		url = new URL(sitio + "ventas/listar"); // trae el metodo de Ventas.API
+		url = new URL(sitio + "Ventas/listar"); // trae el metodo de Ventas.API
 		HttpURLConnection http = (HttpURLConnection) url.openConnection();
 
 		http.setRequestMethod("GET");
@@ -85,4 +98,3 @@ public class VentasJSON {
 		}
 
 }
-*/
