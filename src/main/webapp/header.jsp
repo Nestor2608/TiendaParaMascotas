@@ -44,20 +44,42 @@
 								href="Controlador?menu=Usuarios&accion=listar">Usuarios</a></li>
 							<li class="nav-item"><a class="nav-link active"
 								aria-current="page"
-								href="Controlador?menu=Clientes&accion=listar">Clientes</a></li>
+								href="Controlador?menu=Clientes&accion=listar"
+								>Clientes</a></li>
 							<li class="nav-item"><a class="nav-link"
-								href="Controlador?menu=Proveedores&accion=listar">Proveedores</a></li>
+								href="Controlador?menu=Proveedores&accion=listar&usuarioActivo=${usuario.getCedula_usuario()}"">Proveedores</a></li>
 							<li class="nav-item"><a class="nav-link "
-								href="Controlador?menu=Productos&accion=listar">Productos</a></li>
+								href="Controlador?menu=Productos&accion=listar&usuarioActivo=${usuario.getCedula_usuario()}">Productos</a></li>
 							<li class="nav-item"><a class="nav-link "
-								href="Controlador?menu=Ventas&accion=default">Ventas</a></li>
+								href="Controlador?menu=Ventas&accion=default&usuarioActivo=${usuario.getCedula_usuario()}""
+								>Ventas</a></li>
 							<li class="nav-item"><a class="nav-link "
 								href="./Reportes.jsp">Reportes</a></li>
+							<input type="text" name="UsuarioActivo"
+								value="${usuario.getCedula_usuario()}" disabled="disabled">
 						</ul>
 					</div>
+					<div class="dropdown">
+					<button class="btn btn-outline-danger dropdown-toggle" type="button"
+						id="dropdownMenuButton1" data-bs-toggle="dropdown"
+						aria-expanded="false">${usuario.getCedula_usuario()}</button>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+						<a class="dropdown-item" href="#"><img
+							src="./imagen/login.png" width="40" alt="40"></a> <a
+							class="dropdown-item" href="#">${usuario.getUsuario()}</a> <a
+							class="dropdown-item" href="#">${usuario.getEmail_usuario()}</a>
+						<div class="dropdown-divider"></div>
+						<form class="dropdown-item" method="POST" action="#">
+							<button class="btn btn-danger center-block" type="submit"
+								name="accion" value="Salir">Cerrar Sesion</button>
+						</form>
+
+					</div>
 				</div>
+				</div>
+				
 			</nav>
 		</div>
-	</div>
+		
 </body>
 </html>

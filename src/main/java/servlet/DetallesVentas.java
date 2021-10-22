@@ -2,13 +2,14 @@ package servlet;
 
 public class DetallesVentas {
 	
-	private Long codigo_detalle_venta;
-	private Long cantidad_productos;
-	private Long codigo_producto;
-	private Long codigo_venta;
+	private long codigo_detalle_venta;
+	private double cantidad_productos;
+	private long codigo_producto;
+	private long codigo_venta;
 	private double venta_total;
 	private double valor_venta;
 	private double valoriva;
+	
 	
 	
 	@Override
@@ -17,28 +18,28 @@ public class DetallesVentas {
 				+ cantidad_productos + ", codigo_producto=" + codigo_producto + ", codigo_venta=" + codigo_venta
 				+ ", venta_total=" + venta_total + ", valor_venta=" + valor_venta + ", valoriva=" + valoriva + "]";
 	}
-	public Long getCodigo_detalle_venta() {
+	public long getCodigo_detalle_venta() {
 		return codigo_detalle_venta;
 	}
-	public void setCodigo_detalle_venta(Long codigo_detalle_venta) {
+	public void setCodigo_detalle_venta(long codigo_detalle_venta) {
 		this.codigo_detalle_venta = codigo_detalle_venta;
 	}
-	public Long getCantidad_productos() {
+	public double getCantidad_productos() {
 		return cantidad_productos;
 	}
-	public void setCantidad_productos(Long cantidad_productos) {
+	public void setCantidad_productos(double cantidad_productos) {
 		this.cantidad_productos = cantidad_productos;
 	}
-	public Long getCodigo_producto() {
+	public long getCodigo_producto() {
 		return codigo_producto;
 	}
-	public void setCodigo_producto(Long codigo_producto) {
+	public void setCodigo_producto(long codigo_producto) {
 		this.codigo_producto = codigo_producto;
 	}
-	public Long getCodigo_venta() {
+	public long getCodigo_venta() {
 		return codigo_venta;
 	}
-	public void setCodigo_venta(Long codigo_venta) {
+	public void setCodigo_venta(long codigo_venta) {
 		this.codigo_venta = codigo_venta;
 	}
 	public double getVenta_total() {
@@ -59,6 +60,9 @@ public class DetallesVentas {
 	public void setValoriva(double valoriva) {
 		this.valoriva = valoriva;
 	}
+	
+	
+	
 	
 	
 

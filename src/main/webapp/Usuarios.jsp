@@ -19,6 +19,7 @@
 			<div class="col-md-12 col-lg-7">
 				<div class="col-lg-12">
 					<h1 class="Titulos">Usuarios</h1>
+					<input type="text" name="UsuarioActivo" value="${usuarioActivo.getCedula_usuario()}" >
 					<input type="hidden" name="menu" value="Usuarios">
 				</div>
 				<div>

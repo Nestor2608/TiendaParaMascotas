@@ -15,6 +15,7 @@
 <script type="text/javascript" src="./Codigos.js"></script>
 <body>
 	<%@ include file="header.jsp"%>
+	<input type="text" name="UsuarioActivo" value="${usuario.getNombre_usuario()}" disabled="disabled">
 	<div class="container-fluid">
 		<div class="row mt-5">
 			<div class="col">

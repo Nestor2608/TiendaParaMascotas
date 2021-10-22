@@ -5,6 +5,7 @@ import java.io.PrintWriter;
 import java.net.URL;
 import java.util.ArrayList;
 
+import javax.security.auth.message.callback.PrivateKeyCallback.Request;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -39,7 +40,7 @@ public class DemoServlet extends HttpServlet {
 			}
 
 			if (respuesta == 0) {
-				request.getRequestDispatcher("/Login.jsp").forward(request, response);
+				request.getRequestDispatcher("/Login.jsp").forward(request, response);				
 				System.out.println("No se encontraron datos");
 			}
 

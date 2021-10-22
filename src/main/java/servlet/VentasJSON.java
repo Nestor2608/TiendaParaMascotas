@@ -20,7 +20,7 @@ public class VentasJSON {
 	private static String sitio = "http://localhost:5000/";
 	
 	public static int postJSON(Ventas ventas) throws IOException {
-
+		
 		url = new URL(sitio + "Ventas/guardar");
 		HttpURLConnection http;
 		http = (HttpURLConnection) url.openConnection();
@@ -39,7 +39,7 @@ public class VentasJSON {
 				+ "\"codigo_venta\":\"" + String.valueOf(ventas.getCodigo_venta())
 				+ "\",\"cedula_cliente\": \"" + String.valueOf(ventas.getCedula_cliente())
 				+ "\",\"cedula_usuario\": \"" + String.valueOf(ventas.getCedula_usuario())
-				+ "\",\"iva_venta\": \"" + String.valueOf(ventas.getIva_venta()) 
+				+ "\",\"ivaventa\": \"" + String.valueOf(ventas.getIvaventa()) 
 				+ "\",\"total_venta\": \"" + String.valueOf(ventas.getTotal_venta()) 
 				+ "\",\"valor_venta\":\"" 	+ String.valueOf(ventas.getValor_venta()) 
 				+ "\"}";
@@ -89,7 +89,7 @@ public class VentasJSON {
 				venta.setCodigo_venta(Long.parseLong(innerObj.get("numerofactura").toString())); // convertir de String // a Long
 				venta.setCedula_cliente(Long.parseLong(innerObj.get("direccion_venta").toString()));
 				venta.setCedula_usuario(Long.parseLong(innerObj.get("email_venta").toString()));
-				venta.setIva_venta(Long.parseLong(innerObj.get("nombre_venta").toString()));
+				venta.setIvaventa(Long.parseLong(innerObj.get("nombre_venta").toString()));
 				venta.setTotal_venta(Long.parseLong(innerObj.get("telefono_venta").toString()));
 				venta.setValor_venta(Long.parseLong(innerObj.get("telefono_venta").toString()));
 				lista.add(venta);

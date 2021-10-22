@@ -22,6 +22,7 @@
 				<div class="col-lg-8 centrar">
 					<form class="form-sign" method="get" action="Controlador">
 						<div class="form-group">
+						<input type="text" name="UsuarioActivo" value="${usuarioSeleccionado.getCedula_usuario()}" >
 							<input type="hidden" name="menu" value="Clientes"> <label
 								class="texto">Cedula</label> <input type="number"
 								name="cedula_cliente" class="form-control" required
